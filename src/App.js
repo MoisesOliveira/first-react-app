@@ -4,9 +4,14 @@ import './App.css';
 import FirstComponent from './firstComponent';
 
 function App() {
-  return (
-      <FirstComponent />
-  );
+  let time = [1,2,3,4,'i',5]
+  return(
+    <div>
+      {time.map(()=>{
+      return <FirstComponent />
+    })}
+    </div>
+    
+  )
 }
-
 export default App;
